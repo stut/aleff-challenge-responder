@@ -1,4 +1,4 @@
-FROM golang:1.18.0-alpine3.15 AS build
+FROM golang:1.23.1-alpine3.20 AS build
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ RUN go mod download
 
 COPY src/*.go ./
 
-RUN CGO_ENABLED=0 go build -o /aleff-challenge-responder
+RUN CGO_ENABLED=0 go build -o /aleff-challenge-responder -trimpath -ldflags "-s -w"
 
 FROM scratch
 
