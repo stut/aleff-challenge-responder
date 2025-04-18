@@ -1,8 +1,8 @@
 module github.com/stut/aleff-challenge-responder
 
-go 1.23.1
+go 1.24.2
 
-require github.com/hashicorp/consul/api v1.29.4
+require github.com/hashicorp/consul/api v1.32.0
 
 require (
 	github.com/armon/go-metrics v0.4.1 // indirect
@@ -19,6 +19,6 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
-	golang.org/x/exp v0.0.0-20230817173708-d852ddb80c63 // indirect
-	golang.org/x/sys v0.19.0 // indirect
+	golang.org/x/exp v0.0.0-20250106191152-7588d65b2ba8 // indirect
+	golang.org/x/sys v0.29.0 // indirect
 )
